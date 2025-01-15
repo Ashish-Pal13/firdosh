@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Cocogoose Light', sans-serif;
+  overflow-x:hidden ;
+  
+  
+}
+body p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+@keyframes bounce-up-down {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); 
+  }
+}
+
+.animate-bounce-up-down {
+  
+  animation: bounce-up-down 2s infinite; 
+}
+
+.animate-bounce-up-down-name{
+  animation: bounce-up-down 3s infinite; 
+}
+.navbar_for_phone {
+  display: none;
+}
+
+@media (max-width: 600px) {
+
+  body{
+    overflow-x: hidden;
+  }
+  .navbar {
+    display: none;
+  }
+  .navbar_for_phone {
+    display:block;
+  }
+  
+
+}
+
+@keyframes scrollInfinite {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scroll-content {
+  display: flex;
+  animation: scrollInfinite 25s linear infinite;
+}
+@keyframes scrollInfiniteImage {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.scroll-contentImage{
+  
+  animation: scrollInfiniteImage 25s linear infinite;
+}
+/* 15s */
+  .scroll-content:hover{
+  animation-play-state: paused;
+}
+
