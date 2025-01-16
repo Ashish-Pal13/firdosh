@@ -56,7 +56,7 @@ function page() {
             <div>
             
                 <div
-                    className="h-96 bg-cover bg-center flex justify-center items-center px-2"
+                    className="h-72 bg-cover bg-center flex justify-center items-center px-2"
                     style={{
                     backgroundImage: `url(${bg_image.src})`,
                     }}
@@ -66,18 +66,17 @@ function page() {
                     src={textfirdosh}
                     alt="textfirdosh"
                     className="animate-bounce-up-down-name cursor-pointer"
-                    style={{height:"60px"}}
+                    style={{height:"40px"}}
                     />
                 </div>
-                <div className='hidden md:flex justify-center items-center'>
-                  <div className='w-80 h-80 rounded-full overflow-hidden cursor-pointer'>
+                <div className='hidden md:flex justify-center items-center relative top-10'>
+                  <div className='w-72 h-72 rounded-full overflow-hidden cursor-pointer  absolute'>
                     <Image src={images[currentIndex].src} alt={images[currentIndex].alt} className="rounded-full"/>
                   </div>
                 </div>
 
-                <div className="flex flex-col justify-center items-center relative">
-                      
-                        <div className="w-80 h-80 md:hidden rounded-full overflow-hidden relative">
+                <div className="flex flex-col justify-center items-center relative top-10"> 
+                        <div className="w-72 h-72 md:hidden rounded-full overflow-hidden absolute">
                           <Image
                             src={images[currentIndex].src}
                             alt={images[currentIndex].alt}
@@ -86,9 +85,6 @@ function page() {
                             objectFit="cover"
                           />
                         </div>
-
-                      
-                        
                 </div>
 
                 
@@ -96,7 +92,7 @@ function page() {
                  
                 
 
-                <div className="flex flex-col justify-center items-center text-center mt-28 mb-32 mx-4">
+                <div className="flex flex-col justify-center items-center text-center mt-56 mb-32 mx-4">
                     <div className="max-w-3xl  text-[#493616] flex flex-col gap-4">
                         <p>
                         Firdosh is a multidisciplinary visual artist based in India. She attended the Faculty of Fine Arts,
