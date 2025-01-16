@@ -26,7 +26,7 @@ function page() {
                 className="animate-bounce-up-down cursor-pointer mx-auto lg:mx-0"
               />
             </div>
-            <div className='text-[14px] text-center lg:text-left mt-4'>
+            <div className='text-[14px] text-center lg:text-left mt-4 text-[#493616]'>
               <p className="pb-1 text-[16px]">Thank you for visiting.</p>
               <div className='italic mt-2 hidden md:block'>
                 <p>‘’Always enthusiastic and looking forward to new collaborations</p>
@@ -41,7 +41,7 @@ function page() {
                 Let's create something extraordinary together.’’</p>
               </div>
             </div>
-            <div className='flex flex-col gap-4 mt-8 lg:mt-12 text-center lg:text-left'>
+            <div className='flex flex-col gap-4 mt-8 lg:mt-12 text-center lg:text-left text-[#493616]'>
               <p>GET IN TOUCH</p>
               <div className='flex justify-center lg:justify-start gap-4'>
                 <a href="https://www.instagram.com/firdosh.__/" target="_blank" rel="noopener noreferrer">
@@ -60,7 +60,7 @@ function page() {
             </div>
           </div>
         </div>
-        <p className='text-center lg:text-right text-sm sm:text-base mt-8 lg:mt-0'>
+        <p className='text-center lg:text-right text-sm sm:text-base mt-8 lg:mt-0 text-[#8c6a3a]'>
           COPYRIGHT © FIRDOSH 2024. ALL RIGHTS RESERVED.
         </p>
       </div>

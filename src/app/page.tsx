@@ -1,5 +1,7 @@
 "use client";
-import { useRouter } from 'next/navigation'; 
+
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import Image from "next/image";
 import logo from "../../public/images/download.png";
 import backgroundmain from "../../public/images/backgroundmain.svg";
@@ -7,14 +9,19 @@ import backgroundmain from "../../public/images/backgroundmain.svg";
 export default function Home() {
   const router = useRouter();
 
-  const handleLogoClick = () => {
-    router.push('/screen/about');
-  };
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      router.push('/screen/about');
+    }, 3000); 
+
+    
+    return () => clearTimeout(timer);
+  }, []); 
+
   return (
-  <>
-  
-  <div
-        className="h-screen w-screen bg-cover bg-center flex justify-center items-center "
+    <>
+      <div
+        className="h-screen w-screen bg-cover bg-center flex justify-center items-center"
         style={{
           backgroundImage: `url(${backgroundmain.src})`,
         }}
@@ -23,8 +30,7 @@ export default function Home() {
           src={logo}
           alt="logo"
           style={{ height: "250px", width: "450px" }}
-          className="animate-bounce-up-down cursor-pointer"
-          onClick={handleLogoClick}
+          className="animate-bounce-up-down"
         />
       </div>
     </>

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { MinusSquare, PlusSquare, Trash, TrashSimple } from "@phosphor-icons/react";
+import { MinusSquare, PlusSquare, Trash, TrashSimple, X } from "@phosphor-icons/react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useRouter } from "next/navigation";
@@ -87,10 +87,22 @@ export const Addtocart: React.FC<PopupProps> = ({ images, onClose, onDeleteImage
     router.push(`https://wa.me/7011179418?text=${encodeURIComponent(whatsappMessage)}`);
     images.forEach((image) => onDeleteImage(image.src));
   };
+  const onCloseFun =()=>{
+    onClose(); 
+    images.forEach((image) => onDeleteImage(image.src));
+  }
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 p-9">
-      <div className="bg-[#f3efdf] rounded-lg p-6 shadow-lg">
+       
+      <div className="bg-[#f3efdf] rounded-lg p-6 shadow-lg ">
+        <div className="w-[100%] flex justify-end my-2"> 
+            <X
+                    size={32}
+                    className="text-[#493616] cursor-pointer hover:scale-110 transition-transform duration-300 "
+                    onClick={onCloseFun}       
+            />
+        </div>
         <div className="flex flex-col gap-7 overflow-y-auto" style={{ maxHeight: "200px" }}>
           {images.map((image, index) => (
             <div key={index} className="flex gap-5 items-center">
@@ -99,13 +111,13 @@ export const Addtocart: React.FC<PopupProps> = ({ images, onClose, onDeleteImage
                 alt={image.title}
                 style={{ height: "180px", width: "200px" }}
               />
-              <div className="flex flex-col gap-1 items-center">
+              <div className="flex flex-col gap-1 items-center text-[#493616]">
                 <div className="text-[16px] font-medium hidden md:block">{image.title}</div>
                 <div className="flex items-center gap-2">
-                  <div className="text-[32px]">{counters[index]}</div>
+                  <div className="text-[32px] text-[#493616]">{counters[index]}</div>
                   <div>
-                    <PlusSquare size={32} onClick={() => addHandler(index)} />
-                    <MinusSquare size={32} onClick={() => minHandler(index)} />
+                    <PlusSquare size={32} color="#493616" onClick={() => addHandler(index)} />
+                    <MinusSquare size={32} color="#493616" onClick={() => minHandler(index)} />
                   </div>
                 </div>
               </div>

@@ -42,6 +42,7 @@ export function Galleriesone() {
   const openPopup = () => setPopupOpen(true);
   const closePopup = () => setPopupOpen(false);
 
+
   const handleAddToPopup = (image: Imagetype) => {
     
     const isImageSelected = selectedImages.some(selected => selected.src === image.src);

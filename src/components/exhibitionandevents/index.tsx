@@ -94,12 +94,6 @@ export function Exhibitionandevents() {
         style={contentData.titleImage.style}
       />
 
-
-      
-
-     
-
-
       <div className="w-screen p-16 ">
 
         <div className="w-full gap-2 flex overflow-hidden" >
@@ -117,14 +111,17 @@ export function Exhibitionandevents() {
                   />
                  <div className="title-overlay absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex flex-col items-center justify-center p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <p>{image.title}</p>
-                    <a
-                      href={image.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-500 mt-2 underline"
-                    >
-                      Visit Link
-                    </a>
+                    
+                        {image.link && (
+                          <a
+                          href={image.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-500 mt-2 underline"
+                        >
+                          Visit Link
+                        </a>
+                      )}
                 </div>
 
                 </div>

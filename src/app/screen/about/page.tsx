@@ -6,9 +6,10 @@ import {Navbar} from '@/components/navbar';
 import logo from "../../../../public/images/download.png";
 import awardsnfeaturesheadline from "../../../../public/images/awards nfeatures headline.svg"; 
 import textfirdosh from "../../../../public/images/textfirdosh-01.svg";
-import artistphoto from "../../../../public/images/artistphoto.svg";
-import hennaartwork from "../../../../public/images/hennaartwork.svg";
-import firdoshImage from "../../../../public/images/firdoshImage.jpg";
+import artistphoto from "../../../../public/images/FirdoshImages-03.png";
+import hennaartwork from "../../../../public/images/FirdoshImages02.png";
+import firdoshImage from "../../../../public/images/FirdoshImages01.png";
+import FirdoshImagesOne from "../../../../public/images/FirdoshImages04.png";
 import MYWEBSITEUi_1 from "../../../../public/images/MY WEBSITE UI-29.svg";
 import MYWEBSITEUi_2 from "../../../../public/images/MY WEBSITE UI-30.svg";
 import MYWEBSITEUi_3 from "../../../../public/images/MY WEBSITE UI-31.svg";
@@ -36,6 +37,7 @@ function page() {
     { src: firdoshImage, alt: 'Firdosh Image' },
     { src: hennaartwork, alt: 'Henna Artwork' },
     { src: artistphoto, alt: 'Artist Photo' },
+    {src:FirdoshImagesOne, alt:'FirdoshImagesOne'},
   ];
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -97,16 +99,17 @@ function page() {
                 <div className="flex flex-col justify-center items-center text-center mt-28 mb-32 mx-4">
                     <div className="max-w-3xl  text-[#493616] flex flex-col gap-4">
                         <p>
-                        Firdosh is a multidisciplinary visual artist based in India.She attended the Faculty of Fine Arts,Jamia Millia Islamia, pursuing B.F.A and M.F.A in Art
-                        Education (2022), New Delhi, India.Firdosh focuses on traditional and digital paintings. Her strength as a creative individual is her 
-                        unique style and versatility, spanning across 2D illustrations, visual development, character design,diversity-driven graphic designs, and NFTs.
-                        Throughout her artistic career, she has collaborated with notable clients and fellow artists, bringing compelling projects to life. These experiences have enriched Firdosh’s artistic perspective.
+                        Firdosh is a multidisciplinary visual artist based in India. She attended the Faculty of Fine Arts,
+                         Jamia Millia Islamia, pursuing B.F.A and M.F.A in Art Education (2022), New Delhi, India. Firdosh 
+                         focuses on traditional and digital paintings. Her strength as a creative individual is her unique art-style 
+                         and versatility, spanning across visual development, 3D visual production, character creation, diversity-driven 
+                         designs and NFTs. Throughout her artistic career, she has collaborated with notable clients and fellow artists,
+                          bringing  compelling projects to life. These experiences have enriched Firdosh’s artistic perspective.
                         </p>
 
                     </div>
                     <div  className="max-w-3xl  text-[#493616] flex flex-col gap-2 mt-4">
-                        <p>‘’I am always enthusiastic and looking forward to new collaborations and projects, I invite you to 
-                            connect with me for commissions and collaborative opportunities at <a href="mailto:firdosh940@gmail.com" className="text-[#0000EE] underline">firdosh940@gmail.com</a>.  Let's 
+                        <p>‘’I am always enthusiastic and looking forward for new collaborations and projects, I invite you to connect with me for commissions and collaborative opportunities at <a href="mailto:firdosh940@gmail.com" className="text-[#0000EE] underline">firdosh940@gmail.com</a>.  Let's 
                             create something extraordinary together.’’</p>
                     </div>
                 </div>

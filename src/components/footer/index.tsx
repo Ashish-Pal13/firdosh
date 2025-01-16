@@ -7,7 +7,7 @@ import behance_logo from "../../../public/galleries/behance-1-01.svg";
 
 export function Footer() {
   return (
-    <div className=' flex flex-col justify-center items-center py-10 gap-4 bg-[#f3efdf]'>
+    <div className=' flex flex-col justify-center items-center py-10 gap-4 bg-[#f3efdf] text-[#8c6a3a]'>
         
           <div className='flex gap-6'>
               <a href="https://www.instagram.com/firdosh.__/" target="_blank" rel="noopener noreferrer">
@@ -24,7 +24,7 @@ export function Footer() {
                        {/* <Image src={behance_logo} alt="behance_logo" style={{height:"32"}}></Image> */}
                   </a>
                               </div>
-         <p className='flex justify-center items-center text-sm sm:text-base'>COPYRIGHT © FIRDOSH 2024. ALL RIGHTS RESERVED.</p>
+         <p className='flex justify-center items-center text-xs sm:text-sm'>COPYRIGHT © FIRDOSH 2024. ALL RIGHTS RESERVED.</p>
     </div>
   )
 }

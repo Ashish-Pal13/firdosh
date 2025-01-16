@@ -56,11 +56,13 @@ export function Youtube() {
         <div className="flex  gap-4 items-center mt-4 md:mt-0 md:flex-row md:gap-10">
           <CaretLeft
             size={32}
+            color='#493616'
             className="cursor-pointer transform hover:scale-110 transition-transform duration-300"
             onClick={handlePreviousVideo}
           />
           <CaretRight
             size={32}
+             color='#493616'
             className="cursor-pointer transform hover:scale-110 transition-transform duration-300"
             onClick={handleNextVideo}
           />
